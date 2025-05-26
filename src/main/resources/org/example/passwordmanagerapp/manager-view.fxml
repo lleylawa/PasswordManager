@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.passwordmanagerapp.ManagerController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <TextField fx:id="websiteField" promptText="Website"/>
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <HBox spacing="10">
+        <Button text="Generate" onAction="#onGenerateClick"/>
+        <Button text="Save" onAction="#onSaveClick"/>
+        <Button text="Decrypt Selected" onAction="#onDecryptClick"/>
+    </HBox>
+    <ListView fx:id="passwordList" prefHeight="200"/>
+</VBox>
+

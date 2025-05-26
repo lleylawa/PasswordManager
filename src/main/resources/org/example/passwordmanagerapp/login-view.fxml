@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.passwordmanagerapp.LoginController"
+>
+    <Label text="Enter Master Password"/>
+    <PasswordField fx:id="masterPasswordField"/>
+    <Button text="Login" onAction="#onLoginClick"/>
+</VBox>
